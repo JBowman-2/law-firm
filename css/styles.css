@@ -302,3 +302,155 @@ template {
  */
 [hidden] {
   display: none; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* body */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px; }
+
+/* header */
+div#headWrapper {
+  background-color: black; }
+
+header h1 {
+  color: red;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1px 0px 0px 0px;
+  text-shadow: 2px 2px black; }
+
+header h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+  display: block;
+  color: white;
+  text-shadow: 2px 2px black; }
+
+/* navigation */
+nav {
+  background-color: blue;
+  margin-bottom: 0px; }
+
+nav ul {
+  margin: 0px;
+  padding: 0px; }
+
+nav li {
+  float: left;
+  width: 25%;
+  list-style-type: none;
+  text-align: center;
+  background-color: #6666ff;
+  border-left: 2px solid blue; }
+
+nav li.active {
+  background-color: #ccccff; }
+
+nav a {
+  font-size: 1rem;
+  display: block;
+  padding: .8rem 0;
+  color: white;
+  text-align: center;
+  text-decoration: none; }
+
+nav a.active {
+  font-weight: 700;
+  color: maroon; }
+
+nav a:hover {
+  background-color: #0000cc; }
+
+/* main */
+main {
+  padding: 1rem 0px; }
+
+main h1 {
+  color: maroon;
+  margin: 0 0 5px 2%; }
+
+div.flexed {
+  display: flex;
+  flex-wrap: wrap; }
+
+.small-1 {
+  flex-basis: 8.3333333333%; }
+
+.small-2 {
+  flex-basis: 16.6666666667%; }
+
+.small-3 {
+  flex-basis: 25%; }
+
+.small-4 {
+  flex-basis: 33.3333333333%; }
+
+.small-5 {
+  flex-basis: 41.6666666667%; }
+
+.small-6 {
+  flex-basis: 50%; }
+
+.small-7 {
+  flex-basis: 58.3333333333%; }
+
+.small-8 {
+  flex-basis: 66.6666666667%; }
+
+.small-9 {
+  flex-basis: 75%; }
+
+.small-10 {
+  flex-basis: 83.3333333333%; }
+
+.small-11 {
+  flex-basis: 91.6666666667%; }
+
+.small-12 {
+  flex-basis: 100%; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+div#footerWrapper {
+  background-color: #2e1e0d; }
+
+footer {
+  background-color: #2e1e0d;
+  text-align: center;
+  padding: 1rem 2%;
+  color: white; }
+
+@media only screen and (min-width: 600px) {
+  header h1 {
+    font-size: 2.5rem; }
+
+  header h2 {
+    font-size: 1.8rem; }
+
+  nav ul {
+    padding-left: 2%; }
+
+  nav li {
+    width: auto; }
+
+  nav a {
+    padding: .8rem 1rem;
+    font-size: 1.5rem; } }
+@media only screen and (min-width: 900px) {
+  header, nav, main, footer {
+    max-width: 75rem;
+    margin: auto; } }
