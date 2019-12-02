@@ -94,15 +94,31 @@ main h1 {
     margin: 0 0 5px $gutter;
 }
 
+/* lawyers */
+
+
+
+
+/* blog */
+
 div.flexed {
     display: flex; 
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
+}
+
+div.flexed div img {
+    padding: 2%;
+    width: 100%;
+}
+
+div.flexed div p{
+    padding: 2%;
 }
 
 @for $i from 1 through 12 {
     $w:($i / 12) * 100%;
     .small-#{$i} {flex-basis: $w;}	
-} // end loop
+} 
 
 
 
