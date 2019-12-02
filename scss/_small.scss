@@ -1,0 +1,128 @@
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+
+/* body */
+
+body {
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    font-size: 16px;
+}
+
+
+/* header */
+
+div#headWrapper {
+    background-color: black;
+}
+
+
+
+header h1 {
+    color: $primaryColor;
+    font-weight: $heavyWeight;
+    font-size: 2rem;
+    margin: 1px 0px 0px 0px;
+    text-shadow: 2px 2px black;
+}
+
+header h2 {
+    font-weight: $regularWeight;
+    font-size: 1.5rem;
+    margin: 0;
+    display: block;
+    color: white;
+    text-shadow: 2px 2px black;
+  
+}
+
+/* navigation */
+
+nav {
+    background-color: $subColor;
+    margin-bottom: 0px;   
+}
+
+nav ul {
+    margin: 0px; padding: 0px;
+}
+
+nav li {
+    float: left;
+    width: 25%;
+    list-style-type: none;
+    text-align: center;
+    background-color: lighten($subColor, 20%);
+    border-left: 2px solid $subColor;
+    
+}
+
+nav li.active { 
+    background-color: lighten($subColor, 40%);
+    
+}
+
+nav a {
+    font-size: 1rem;
+    display: block;
+    padding: .8rem 0;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a.active {
+    font-weight: $heavyWeight;
+    color: darken($primaryColor, 25%);
+}
+
+nav a:hover {
+    background-color: darken($subColor, 10%);
+
+}
+
+/* main */
+main {
+
+    padding: 1rem 0px;
+}
+
+main h1 {
+    color: darken($primaryColor, 25%);
+    margin: 0 0 5px $gutter;
+}
+
+div.flexed {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+@for $i from 1 through 12 {
+    $w:($i / 12) * 100%;
+    .small-#{$i} {flex-basis: $w;}	
+} // end loop
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div#footerWrapper {
+    background-color: #2e1e0d;
+}
+
+footer {
+    background-color: #2e1e0d;
+    text-align: center;
+    padding: 1rem $gutter; 
+    color: white;
+}
+
+
+
+
