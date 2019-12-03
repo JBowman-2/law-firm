@@ -312,6 +312,10 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
+main, body {
+  margin: 0px;
+  padding: 0px; }
+
 /* body */
 body {
   font-family: "Roboto", sans-serif;
@@ -373,25 +377,66 @@ nav a:hover {
   background-color: #0000cc; }
 
 /* main */
-main {
-  padding: 1rem 0px; }
-
 main h1 {
   color: maroon;
-  margin: 0 0 5px 2%; }
+  margin: 0 0 5px 0; }
 
 /* lawyers */
+div.law {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 2vw; }
+
+div.law div {
+  width: 100%; }
+
+div.law div.box {
+  border: 2px solid black;
+  border-radius: 10px; }
+
+div.law div img {
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black; }
+
+div.law div p {
+  text-align: center; }
+
 /* blog */
-div.flexed {
+div.blog {
   display: flex;
   flex-wrap: wrap; }
 
-div.flexed div img {
-  padding: 2%;
+div.blog div img {
   width: 100%; }
 
-div.flexed div p {
-  padding: 2%; }
+div.blog div p {
+  color: red;
+  text-align: center; }
+
+/* call to action */
+div.action {
+  display: flex;
+  flex-wrap: wrap; }
+
+div.action div {
+  padding: 0%; }
+
+div.action div p {
+  background-color: red;
+  text-align: center; }
+
+/* faq */
+div.faq {
+  display: flex;
+  flex-wrap: wrap; }
+
+div.faq div {
+  padding: 0%; }
+
+div.faq div p {
+  text-align: center;
+  background-color: red; }
 
 .small-1 {
   flex-basis: 8.3333333333%; }
