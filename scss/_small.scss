@@ -175,21 +175,18 @@ div.blog {
    
 }
 
-div.blog div {
-    border: 2px solid black; 
 
-}
 
 div.blog div img {
      width: 100%;
 }
 
-div.blog div h3 {
+div.blog div div h3 {
     text-align: center;
     margin: 5px 0 5px 0;
 }
 
-div.blog div h4 {
+div.blog div div h4 {
     text-align: center;
     background-color: rgb(79, 103, 134);
     margin: 8px 0 0 0;
@@ -198,11 +195,15 @@ div.blog div h4 {
 
 }
 
-div.blog div p{
+div.blog div div p{
     text-align: left;
     margin: 0 15px 0 15px;
 }
 
+div.blog div div {
+    margin: 10px;
+    border: 1px solid black;
+}
 
 /* call to action */
 
@@ -220,6 +221,8 @@ div.action div p{
     text-align: center;
     font-size: 1.5rem;
     margin: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     border-radius: 15px;
     color: white;
     font-weight: $heavyWeight;
@@ -237,24 +240,27 @@ div.faq {
     margin-top: 2rem;
 }
 
-div.faq div {
+div.faq div div {
    padding: 0%;
-   background-color: lighten($subColor, 10%);
    border-radius: 10px;
-   border: 2px solid black;
    
 }
 
-div.faq div p{
+div.faq div div p{
     text-align: left;
     margin: 15px;
 }
-div.faq div h3{
+div.faq div div h3{
     text-align: left;
     margin: 15px;
     font-size: 1.7rem;
 }
 
+div.faq div div {
+    margin: 10px;
+    background-color: lighten($subColor, 10%);
+    border: 1px solid black;
+}
 
 /* icon */
 
