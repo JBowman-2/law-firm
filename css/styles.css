@@ -392,8 +392,7 @@ div.law div {
   width: 100%; }
 
 div.law div.box {
-  border: 2px solid black;
-  border-radius: 10px; }
+  border: 2px solid black; }
 
 div.law div img {
   width: 100%;
@@ -408,12 +407,26 @@ div.blog {
   display: flex;
   flex-wrap: wrap; }
 
+div.blog div {
+  border: 2px solid black; }
+
 div.blog div img {
   width: 100%; }
 
+div.blog div h3 {
+  text-align: center;
+  margin: 5px 0 5px 0; }
+
+div.blog div h4 {
+  text-align: center;
+  background-color: #4f6786;
+  margin: 8px 0 0 0;
+  padding: 10px 0;
+  color: white; }
+
 div.blog div p {
-  color: red;
-  text-align: center; }
+  text-align: left;
+  margin: 0 15px 0 15px; }
 
 /* call to action */
 div.action {
@@ -447,11 +460,11 @@ div.faq div {
 
 div.faq div p {
   text-align: left;
-  margin: 2%; }
+  margin: 15px; }
 
 div.faq div h3 {
   text-align: left;
-  margin: 2%;
+  margin: 15px;
   font-size: 1.7rem; }
 
 .small-1 {
