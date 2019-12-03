@@ -1,13 +1,47 @@
 
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 
 header h2 {
     font-size: 1.4rem;
 }
+
+header p.search {
+
+    padding: 5px 75px 5px 5px;
+
+    
+
+}
+
+nav button {
+    display: none;
+}
+
+nav ul.hide {
+    display: block;
+}
+
+nav ul {
+    margin-left: $gutter;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    padding: .8rem 1rem;
+
+}
+
+
+/*
 
 nav ul {
     padding-left: $gutter;
@@ -22,7 +56,7 @@ nav a {
     font-size: 1.5rem;
 }
 
-
+*/
 
 
 

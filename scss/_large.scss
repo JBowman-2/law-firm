@@ -4,6 +4,11 @@ header, nav, main, footer {
     margin: auto;
 }
 
+nav ul li a {
+    padding: .6rem 1rem;
+}
+
+
 @for $i from 1 through 12 {
     $w:(($i / 12) * 100%);
     .large-#{$i} {flex-basis: $w;}	

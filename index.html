@@ -9,32 +9,38 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     
     <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a538e69a90.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
         <div id="headerWrapper">
-                <header>
-                <h1>Johnson, Martin, Tuft, and Brainly </h1>
+                <header class="clearfix">
+                <h1>JM Family Law </h1>
+                
+                <div class="head">
+                        
+                
                 <h2>We get you MONEY.</h2>
+                <p class="search">Search...</p>
+                </div>
                 </header>
         </div>
     
-   
+        <nav class="clearfix">
+                        <button onclick="toggleMenu()">&#9776;</button>
+                        <ul id="priNav" class="hide">
+                                        <li><a href="#">Home</a></li>
+                                        <li class="active"><a href="index.html" class ="active">Attorneys</a></li>
+                                        <li><a href="#">Practices</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">News</a></li>
+                                        <li><a href="#">Links</a></li>
+                        </ul>
+                    </nav>
     
-    <nav class="clearfix">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="index.html" class ="active">Attorneys</a></li>
-            <li><a href="#">Practices</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Links</a></li>
-        </ul>
-    </nav>
-   
 
     <main class="clearfix">
-    
+     
         <h1>Attorneys</h1>
 
         <div class="law">
@@ -160,8 +166,49 @@
 
 
     <footer class="clearfix">
-            &copy; 2019 Josh Bowman • Login
+
+        <div class="icon">
+
+                <div class="large-3"></div>
+                <div class="medium-2 large-1"></div>
+                <div class="small-3 medium-2 large-1">
+                        <i class="fas fa-shipping-fast fa-3x"></i>
+                </div>
+
+                <div class="small-3 medium-2 large-1">
+                        <i class="fab fa-facebook-square fa-3x"></i>
+                </div>
+
+                <div class="small-3 medium-2 large-1">
+                        <i class="fab fa-instagram fa-3x"></i>
+                </div>
+
+                <div class="small-3 medium-2 large-1">
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                </div>
+                <div class="medium-2 large-1"></div>
+                <div class="large-3"></div>
+
+
+        <div>
+
+        
+        
+        
+       
+
+
+
+        </div>
+               
+           
     </footer>
+
+    <script>
+                function toggleMenu() {
+                    document.getElementById("priNav").classList.toggle("hide");
+                }
+                </script>
 
         
 </body>
