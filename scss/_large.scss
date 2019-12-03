@@ -14,7 +14,9 @@ nav ul li a {
     .large-#{$i} {flex-basis: $w;}	
 } 
 
-
+.large-0{
+    flex-basis: 0;
+}
 
 
 

@@ -403,29 +403,27 @@ div.law {
   flex-wrap: wrap;
   margin: 1rem 2vw; }
 
-div.law div {
-  width: 100%; }
-
-div.law div.box {
-  border: 2px solid black; }
-
-div.law div img {
+div.law div div img {
   width: 100%;
   border-top: 2px solid black;
   border-bottom: 2px solid black; }
 
-div.law div p {
+div.law div div p {
   color: #002E6B;
   font-weight: 700;
   text-align: center; }
 
-div.law div h5 {
+div.law div div h5 {
   text-align: center;
   font-size: 1.5rem;
   color: white;
   background-color: #4f6786;
   margin: 0px;
   padding: 1rem; }
+
+div.law div div {
+  margin: 10px;
+  border: 1px solid black; }
 
 /* blog */
 div.blog {
@@ -465,7 +463,7 @@ div.action div p {
   background: linear-gradient(to top, #4f6786, #002F6B 100%);
   text-align: center;
   font-size: 1.5rem;
-  padding: 1rem;
+  margin: 1rem;
   border-radius: 15px;
   color: white;
   font-weight: 700; }
@@ -626,7 +624,10 @@ footer {
     flex-basis: 91.6666666667%; }
 
   .medium-12 {
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+
+  .medium-0 {
+    flex-basis: 0; } }
 @media only screen and (min-width: 900px) {
   header, nav, main, footer {
     max-width: 75rem;
@@ -669,4 +670,7 @@ footer {
     flex-basis: 91.6666666667%; }
 
   .large-12 {
-    flex-basis: 100%; } }
+    flex-basis: 100%; }
+
+  .large-0 {
+    flex-basis: 0; } }

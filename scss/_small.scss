@@ -130,29 +130,24 @@ div.law {
     
 }
 
-div.law div {
-    width: 100%;
-      
-}
 
-div.law div.box {
-    border: 2px solid black;
-}
 
-div.law div img {
+
+
+div.law div div img {
     width: 100%;
     border-top: 2px solid black; 
     border-bottom: 2px solid black;   
 }
 
-div.law div p{
+div.law div div p{
     color: $primaryColor;
     font-weight: $heavyWeight;
     text-align: center;
   
 }
 
-div.law div h5{
+div.law div div h5{
     text-align: center;
     font-size: 1.5rem;
     color: white;
@@ -162,6 +157,11 @@ div.law div h5{
     
     
     
+}
+
+div.law div div {
+    margin: 10px;
+    border: 1px solid black;
 }
 
 
@@ -219,7 +219,7 @@ div.action div p{
     background: linear-gradient(to top, rgb(79, 103, 134) , #002F6B 100%);
     text-align: center;
     font-size: 1.5rem;
-    padding: 1rem;
+    margin: 1rem;
     border-radius: 15px;
     color: white;
     font-weight: $heavyWeight;
