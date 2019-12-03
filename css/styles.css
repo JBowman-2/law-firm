@@ -323,27 +323,27 @@ body {
   font-size: 16px; }
 
 /* header */
-div#headWrapper {
-  background-color: black; }
+div#headerWrapper {
+  background: linear-gradient(to top, #4f6786, #002F6B 100%); }
 
 header h1 {
-  color: red;
+  color: white;
   font-weight: 700;
-  font-size: 2rem;
-  margin: 1px 0px 0px 0px;
-  text-shadow: 2px 2px black; }
+  font-size: 1rem;
+  padding: 2rem 0 0 0;
+  margin: 0 0 0 2%; }
 
 header h2 {
   font-weight: 400;
-  font-size: 1.5rem;
-  margin: 0;
+  font-size: 1rem;
+  padding: 5px 0 10px 0;
+  margin: 0 0 0 2%;
   display: block;
-  color: white;
-  text-shadow: 2px 2px black; }
+  color: #ffd585; }
 
 /* navigation */
 nav {
-  background-color: blue;
+  background-color: #B87800;
   margin-bottom: 0px; }
 
 nav ul {
@@ -355,11 +355,11 @@ nav li {
   width: 25%;
   list-style-type: none;
   text-align: center;
-  background-color: #6666ff;
-  border-left: 2px solid blue; }
+  background-color: #ffb11f;
+  border-left: 2px solid #B87800; }
 
 nav li.active {
-  background-color: #ccccff; }
+  background-color: #ffd585; }
 
 nav a {
   font-size: 1rem;
@@ -371,15 +371,16 @@ nav a {
 
 nav a.active {
   font-weight: 700;
-  color: maroon; }
+  color: black; }
 
 nav a:hover {
-  background-color: #0000cc; }
+  background-color: #855700;
+  color: white; }
 
 /* main */
 main h1 {
-  color: maroon;
-  margin: 0 0 5px 0; }
+  color: #002E6B;
+  margin: 2%; }
 
 /* lawyers */
 div.law {
@@ -423,20 +424,35 @@ div.action div {
   padding: 0%; }
 
 div.action div p {
-  background-color: red;
-  text-align: center; }
+  background: linear-gradient(to top, #4f6786, #002F6B 100%);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 15px;
+  color: white;
+  font-weight: 700; }
 
 /* faq */
 div.faq {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
 
 div.faq div {
-  padding: 0%; }
+  padding: 0%;
+  background-color: #eb9900;
+  border-radius: 10px;
+  border: 2px solid black; }
 
 div.faq div p {
-  text-align: center;
-  background-color: red; }
+  text-align: left;
+  margin: 2%; }
+
+div.faq div h3 {
+  text-align: left;
+  margin: 2%;
+  font-size: 1.7rem; }
 
 .small-1 {
   flex-basis: 8.3333333333%; }
@@ -483,17 +499,17 @@ div#footerWrapper {
   background-color: #2e1e0d; }
 
 footer {
-  background-color: #2e1e0d;
+  background: linear-gradient(to bottom, #4f6786, #002F6B 100%);
   text-align: center;
   padding: 1rem 2%;
   color: white; }
 
 @media only screen and (min-width: 600px) {
   header h1 {
-    font-size: 2.5rem; }
+    font-size: 2rem; }
 
   header h2 {
-    font-size: 1.8rem; }
+    font-size: 1.4rem; }
 
   nav ul {
     padding-left: 2%; }
