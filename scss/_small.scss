@@ -21,9 +21,13 @@ body {
 
 div#headerWrapper {
     background: linear-gradient(to top, rgb(79, 103, 134) , #002F6B 100%);
+    border-top: 6px solid $subColor;
 
 }
 
+header {
+    
+}
 
 
 header h1 {
@@ -236,8 +240,9 @@ div.action div p{
 div.faq {
     display: flex; 
     flex-wrap: wrap; 
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  
 }
 
 div.faq div div {
