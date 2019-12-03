@@ -400,7 +400,17 @@ div.law div img {
   border-bottom: 2px solid black; }
 
 div.law div p {
+  color: #002E6B;
+  font-weight: 700;
   text-align: center; }
+
+div.law div h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #4f6786;
+  margin: 0px;
+  padding: 1rem; }
 
 /* blog */
 div.blog {
